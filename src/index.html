@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Du học Nhật Bản</title>
+    <title>Du học Nhật Bản TGG</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -71,29 +71,38 @@
     </div>
     <!-- Chỉ dòng hotline nổi trên đầu trang -->
     <div id="hotline-bar"
-            class="fixed top-0 left-0 w-full bg-[#004F83] z-50 shadow flex items-center px-2 sm:px-4 py-2 transition-all duration-300">
-            <div class="w-full overflow-x-auto">
-                <div class="flex gap-4 min-w-max items-center">
-                    <div class="marquee inline-block">
-                        <span class="font-bold text-yellow-400 text-base sm:text-lg whitespace-nowrap">Email: <a href="mail:0987654321" class="hover:underline">info@duhocnhatban.com</a></span>
-                        <span class="font-bold text-yellow-400 text-base sm:text-lg whitespace-nowrap ml-6">Hotline: <a href="tel:0987654321" class="hover:underline hover:text-yellow-300 transition">0987 654 321</a></span>
-                    </div>
+        class="fixed top-0 left-0 w-full bg-[#004F83] z-50 shadow flex items-center px-2 sm:px-4 py-2 transition-all duration-300">
+        <div class="w-full overflow-x-auto">
+            <div class="flex gap-4 min-w-max items-center">
+                <div class="marquee inline-block">
+                    <span class="font-bold text-yellow-400 text-base sm:text-lg whitespace-nowrap">Email: <a
+                            href="mail:0987654321" class="hover:underline">info@duhocnhatban.com</a></span>
+                    <span class="font-bold text-yellow-400 text-base sm:text-lg whitespace-nowrap ml-6">Hotline: <a
+                            href="tel:0987654321" class="hover:underline hover:text-yellow-300 transition">0987 654
+                            321</a></span>
                 </div>
             </div>
-            <style>
+        </div>
+        <style>
             @media (max-width: 640px) {
                 .marquee {
                     display: inline-block;
                     white-space: nowrap;
                     animation: marquee 10s linear infinite;
                 }
+
                 @keyframes marquee {
-                    0% { transform: translateX(0); }
-                    100% { transform: translateX(-50%); }
+                    0% {
+                        transform: translateX(0);
+                    }
+
+                    100% {
+                        transform: translateX(-50%);
+                    }
                 }
             }
-            </style>
-        </div>
+        </style>
+    </div>
     <!-- Menu điều hướng và chuyển đổi ngôn ngữ (responsive) -->
     <nav class="bg-white shadow px-4 py-3 fixed top-0 left-0 w-full z-40">
         <div class="max-w-6xl mx-auto flex items-center justify-between" id="menu-inner">
@@ -352,7 +361,8 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             <!-- Bước 1 -->
-            <div class="relative rounded-xl overflow-hidden shadow-lg h-56 flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+            <div
+                class="relative rounded-xl overflow-hidden shadow-lg h-56 flex items-center justify-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                 <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80"
                     alt="Bước 1" class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
@@ -482,31 +492,41 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Item 1 -->
-            <div class="bg-indigo-50 rounded-xl shadow p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Nguyễn Thị Mai" class="w-20 h-20 rounded-full mb-4 object-cover">
+            <div
+                class="bg-indigo-50 rounded-xl shadow p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Nguyễn Thị Mai"
+                    class="w-20 h-20 rounded-full mb-4 object-cover">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Nguyễn Thị Mai</h3>
                 <div class="text-sm text-gray-500 mb-2">Trường Nhật ngữ Tokyo</div>
-                <p class="text-gray-700 italic">“Nhờ công ty, mình đã chọn được trường phù hợp và hòa nhập rất nhanh với cuộc sống tại Nhật. Đội ngũ tư vấn rất tận tâm!”</p>
+                <p class="text-gray-700 italic">“Nhờ công ty, mình đã chọn được trường phù hợp và hòa nhập rất nhanh với
+                    cuộc sống tại Nhật. Đội ngũ tư vấn rất tận tâm!”</p>
             </div>
             <!-- Item 2 -->
-            <div class="bg-indigo-50 rounded-xl shadow p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Trần Văn Nam" class="w-20 h-20 rounded-full mb-4 object-cover">
+            <div
+                class="bg-indigo-50 rounded-xl shadow p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Trần Văn Nam"
+                    class="w-20 h-20 rounded-full mb-4 object-cover">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Trần Văn Nam</h3>
                 <div class="text-sm text-gray-500 mb-2">Trường Nhật ngữ Osaka</div>
-                <p class="text-gray-700 italic">“Thủ tục hồ sơ nhanh gọn, được hỗ trợ từ A-Z. Mình rất hài lòng với dịch vụ và sự chuyên nghiệp của công ty.”</p>
+                <p class="text-gray-700 italic">“Thủ tục hồ sơ nhanh gọn, được hỗ trợ từ A-Z. Mình rất hài lòng với dịch
+                    vụ và sự chuyên nghiệp của công ty.”</p>
             </div>
             <!-- Item 3 -->
-            <div class="bg-indigo-50 rounded-xl shadow p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Phạm Thu Hằng" class="w-20 h-20 rounded-full mb-4 object-cover">
+            <div
+                class="bg-indigo-50 rounded-xl shadow p-6 flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Phạm Thu Hằng"
+                    class="w-20 h-20 rounded-full mb-4 object-cover">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Phạm Thu Hằng</h3>
                 <div class="text-sm text-gray-500 mb-2">Trường Nhật ngữ Kyoto</div>
-                <p class="text-gray-700 italic">“Mình cảm thấy rất yên tâm khi được tư vấn và hỗ trợ bởi đội ngũ chuyên nghiệp, thân thiện. Cảm ơn công ty rất nhiều!”</p>
+                <p class="text-gray-700 italic">“Mình cảm thấy rất yên tâm khi được tư vấn và hỗ trợ bởi đội ngũ chuyên
+                    nghiệp, thân thiện. Cảm ơn công ty rất nhiều!”</p>
             </div>
         </div>
     </section>
     <section class="relative w-full mt-12 mb-8 px-2 sm:px-0">
         <div class="absolute inset-0 w-full h-full">
-            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80" alt="Đăng ký tư vấn" class="w-full h-full object-cover">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80"
+                alt="Đăng ký tư vấn" class="w-full h-full object-cover">
         </div>
         <div class="relative z-10 flex items-center justify-center min-h-[480px]">
             <div class="w-full max-w-2xl mx-auto p-8">
@@ -514,31 +534,41 @@
                 <form class="space-y-4">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Họ và tên</label>
-                        <input type="text" class="w-full border rounded px-3 py-2 bg-white bg-opacity-40 backdrop-blur-md focus:outline-none focus:ring focus:border-indigo-400" required>
+                        <input type="text"
+                            class="w-full border rounded px-3 py-2 bg-white bg-opacity-40 backdrop-blur-md focus:outline-none focus:ring focus:border-indigo-400"
+                            required>
                     </div>
                     <div class="flex gap-2">
                         <div class="w-1/3">
                             <label class="block text-sm font-medium text-gray-700 mb-1">Mã vùng</label>
-                            <select class="w-full border rounded px-2 py-2 bg-white bg-opacity-40 backdrop-blur-md focus:outline-none focus:ring focus:border-indigo-400">
+                            <select
+                                class="w-full border rounded px-2 py-2 bg-white bg-opacity-40 backdrop-blur-md focus:outline-none focus:ring focus:border-indigo-400">
                                 <option value="+84">VN (+84)</option>
                                 <option value="+81">JP (+81)</option>
                             </select>
                         </div>
                         <div class="flex-1">
                             <label class="block text-sm font-medium text-gray-700 mb-1">Số điện thoại</label>
-                            <input type="tel" class="w-full border rounded px-3 py-2 bg-white bg-opacity-40 backdrop-blur-md focus:outline-none focus:ring focus:border-indigo-400" required>
+                            <input type="tel"
+                                class="w-full border rounded px-3 py-2 bg-white bg-opacity-40 backdrop-blur-md focus:outline-none focus:ring focus:border-indigo-400"
+                                required>
                         </div>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                        <input type="email" class="w-full border rounded px-3 py-2 bg-white bg-opacity-40 backdrop-blur-md focus:outline-none focus:ring focus:border-indigo-400" required>
+                        <input type="email"
+                            class="w-full border rounded px-3 py-2 bg-white bg-opacity-40 backdrop-blur-md focus:outline-none focus:ring focus:border-indigo-400"
+                            required>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1">Ghi chú</label>
-                        <textarea rows="2" class="w-full border rounded px-3 py-2 bg-white bg-opacity-40 backdrop-blur-md focus:outline-none focus:ring focus:border-indigo-400"></textarea>
+                        <textarea rows="2"
+                            class="w-full border rounded px-3 py-2 bg-white bg-opacity-40 backdrop-blur-md focus:outline-none focus:ring focus:border-indigo-400"></textarea>
                     </div>
                     <!-- <button type="submit" class="w-full py-2 bg-indigo-600 text-white font-semibold rounded hover:bg-indigo-700 transition">Gửi đăng ký</button> -->
-                    <button type="submit" class="w-full py-2 bg-yellow-400 text-black font-semibold rounded shadow hover:bg-yellow-500 hover:scale-105 transition">Gửi đăng ký</button>
+                    <button type="submit"
+                        class="w-full py-2 bg-yellow-400 text-black font-semibold rounded shadow hover:bg-yellow-500 hover:scale-105 transition">Gửi
+                        đăng ký</button>
                 </form>
             </div>
         </div>
@@ -554,64 +584,80 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             <!-- Tin 1 -->
-            <div class="bg-gray-50 rounded-xl shadow p-4 flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Tin 1" class="w-full h-32 object-cover rounded-lg mb-3">
+            <div
+                class="bg-gray-50 rounded-xl shadow p-4 flex flex-col transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+                    alt="Tin 1" class="w-full h-32 object-cover rounded-lg mb-3">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Học bổng du học Nhật Bản 2025</h3>
                 <div class="text-xs text-gray-500 mb-2">29/09/2025</div>
-                <p class="text-gray-700 text-sm">Nhiều chương trình học bổng hấp dẫn dành cho du học sinh Việt Nam năm 2025.</p>
+                <p class="text-gray-700 text-sm">Nhiều chương trình học bổng hấp dẫn dành cho du học sinh Việt Nam năm
+                    2025.</p>
             </div>
             <!-- Tin 2 -->
             <div class="bg-gray-50 rounded-xl shadow p-4 flex flex-col">
-                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="Tin 2" class="w-full h-32 object-cover rounded-lg mb-3">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80"
+                    alt="Tin 2" class="w-full h-32 object-cover rounded-lg mb-3">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Cập nhật quy định visa du học Nhật</h3>
                 <div class="text-xs text-gray-500 mb-2">28/09/2025</div>
-                <p class="text-gray-700 text-sm">Chính phủ Nhật Bản vừa ban hành một số thay đổi về quy định visa cho du học sinh.</p>
+                <p class="text-gray-700 text-sm">Chính phủ Nhật Bản vừa ban hành một số thay đổi về quy định visa cho du
+                    học sinh.</p>
             </div>
             <!-- Tin 3 -->
             <div class="bg-gray-50 rounded-xl shadow p-4 flex flex-col">
-                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Tin 3" class="w-full h-32 object-cover rounded-lg mb-3">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80"
+                    alt="Tin 3" class="w-full h-32 object-cover rounded-lg mb-3">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Kinh nghiệm sống và học tập tại Nhật</h3>
                 <div class="text-xs text-gray-500 mb-2">27/09/2025</div>
-                <p class="text-gray-700 text-sm">Chia sẻ thực tế từ các bạn du học sinh về cuộc sống, học tập, làm thêm tại Nhật Bản.</p>
+                <p class="text-gray-700 text-sm">Chia sẻ thực tế từ các bạn du học sinh về cuộc sống, học tập, làm thêm
+                    tại Nhật Bản.</p>
             </div>
             <!-- Tin 4 -->
             <div class="bg-gray-50 rounded-xl shadow p-4 flex flex-col">
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Tin 4" class="w-full h-32 object-cover rounded-lg mb-3">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+                    alt="Tin 4" class="w-full h-32 object-cover rounded-lg mb-3">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Hội thảo du học Nhật Bản 2025</h3>
                 <div class="text-xs text-gray-500 mb-2">26/09/2025</div>
-                <p class="text-gray-700 text-sm">Tham gia hội thảo để nhận tư vấn trực tiếp từ các chuyên gia giáo dục Nhật Bản.</p>
+                <p class="text-gray-700 text-sm">Tham gia hội thảo để nhận tư vấn trực tiếp từ các chuyên gia giáo dục
+                    Nhật Bản.</p>
             </div>
             <!-- Tin 5 -->
             <div class="bg-gray-50 rounded-xl shadow p-4 flex flex-col">
-                <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=400&q=80" alt="Tin 5" class="w-full h-32 object-cover rounded-lg mb-3">
+                <img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&w=400&q=80"
+                    alt="Tin 5" class="w-full h-32 object-cover rounded-lg mb-3">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Cẩm nang chuẩn bị hồ sơ du học</h3>
                 <div class="text-xs text-gray-500 mb-2">25/09/2025</div>
-                <p class="text-gray-700 text-sm">Hướng dẫn chi tiết các bước chuẩn bị hồ sơ du học Nhật Bản cho học sinh Việt Nam.</p>
+                <p class="text-gray-700 text-sm">Hướng dẫn chi tiết các bước chuẩn bị hồ sơ du học Nhật Bản cho học sinh
+                    Việt Nam.</p>
             </div>
             <!-- Tin 6 -->
             <div class="bg-gray-50 rounded-xl shadow p-4 flex flex-col">
-                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Tin 6" class="w-full h-32 object-cover rounded-lg mb-3">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
+                    alt="Tin 6" class="w-full h-32 object-cover rounded-lg mb-3">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Học tiếng Nhật hiệu quả</h3>
                 <div class="text-xs text-gray-500 mb-2">24/09/2025</div>
-                <p class="text-gray-700 text-sm">Bí quyết học tiếng Nhật nhanh tiến bộ từ các du học sinh thành công.</p>
+                <p class="text-gray-700 text-sm">Bí quyết học tiếng Nhật nhanh tiến bộ từ các du học sinh thành công.
+                </p>
             </div>
             <!-- Tin 7 -->
             <div class="bg-gray-50 rounded-xl shadow p-4 flex flex-col">
-                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Tin 7" class="w-full h-32 object-cover rounded-lg mb-3">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80"
+                    alt="Tin 7" class="w-full h-32 object-cover rounded-lg mb-3">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Visa du học Nhật: Những điều cần biết</h3>
                 <div class="text-xs text-gray-500 mb-2">23/09/2025</div>
                 <p class="text-gray-700 text-sm">Tổng hợp các lưu ý quan trọng khi xin visa du học Nhật Bản.</p>
             </div>
             <!-- Tin 8 -->
             <div class="bg-gray-50 rounded-xl shadow p-4 flex flex-col">
-                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80" alt="Tin 8" class="w-full h-32 object-cover rounded-lg mb-3">
+                <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=400&q=80"
+                    alt="Tin 8" class="w-full h-32 object-cover rounded-lg mb-3">
                 <h3 class="text-lg font-bold text-indigo-700 mb-1">Cuộc sống tại Tokyo</h3>
                 <div class="text-xs text-gray-500 mb-2">22/09/2025</div>
-                <p class="text-gray-700 text-sm">Khám phá cuộc sống hiện đại, năng động tại thủ đô Tokyo qua góc nhìn du học sinh.</p>
+                <p class="text-gray-700 text-sm">Khám phá cuộc sống hiện đại, năng động tại thủ đô Tokyo qua góc nhìn du
+                    học sinh.</p>
             </div>
         </div>
     </section>
-    
+
     <footer class="bg-gray-900 text-gray-100 mt-8">
         <div class="max-w-6xl mx-auto py-10 px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Cột 1: Tên công ty, slogan -->
@@ -623,12 +669,42 @@
             <div>
                 <h4 class="text-lg font-semibold text-indigo-300 mb-2">Danh mục</h4>
                 <ul class="space-y-2">
-                    <li><a href="index.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6" /></svg>Trang chủ</a></li>
-                    <li><a href="company.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7V3a1 1 0 00-1-1H9a1 1 0 00-1 1v4M5 8h14M5 8v13a1 1 0 001 1h12a1 1 0 001-1V8M5 8l7-5 7 5" /></svg>Công ty</a></li>
-                    <li><a href="schools.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 17l4 4 4-4m0-5V3a1 1 0 00-1-1H9a1 1 0 00-1 1v9m0 0H5a1 1 0 00-1 1v6a1 1 0 001 1h14a1 1 0 001-1v-6a1 1 0 00-1-1h-4z" /></svg>Danh sách trường Nhật Ngữ</a></li>
-                    <li><a href="process.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>Quy trình tư vấn</a></li>
-                    <li><a href="news.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5V4h14v16z" /></svg>Tin tức</a></li>
-                    <li><a href="contact.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 2a2 2 0 012 2v16a2 2 0 01-2 2H8a2 2 0 01-2-2V4a2 2 0 012-2h8zm-4 4h.01" /></svg>Liên hệ</a></li>
+                    <li><a href="index.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6" />
+                            </svg>Trang chủ</a></li>
+                    <li><a href="company.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 7V3a1 1 0 00-1-1H9a1 1 0 00-1 1v4M5 8h14M5 8v13a1 1 0 001 1h12a1 1 0 001-1V8M5 8l7-5 7 5" />
+                            </svg>Công ty</a></li>
+                    <li><a href="schools.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 17l4 4 4-4m0-5V3a1 1 0 00-1-1H9a1 1 0 00-1 1v9m0 0H5a1 1 0 00-1 1v6a1 1 0 001 1h14a1 1 0 001-1v-6a1 1 0 00-1-1h-4z" />
+                            </svg>Danh sách trường Nhật Ngữ</a></li>
+                    <li><a href="process.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>Quy trình tư vấn</a></li>
+                    <li><a href="news.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 20H5V4h14v16z" />
+                            </svg>Tin tức</a></li>
+                    <li><a href="contact.html" class="flex items-center gap-2 hover:text-yellow-400 transition"><svg
+                                xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-yellow-400" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M16 2a2 2 0 012 2v16a2 2 0 01-2 2H8a2 2 0 01-2-2V4a2 2 0 012-2h8zm-4 4h.01" />
+                            </svg>Liên hệ</a></li>
                 </ul>
             </div>
             <!-- Cột 3: Liên hệ -->

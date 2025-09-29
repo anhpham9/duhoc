@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức Du học Nhật Bản</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Menu điều hướng (giống các trang khác) -->
+    <nav class="bg-white shadow px-4 py-3">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <span class="text-xl font-bold text-indigo-700">Du học Nhật Bản</span>
+            </div>
+            <!-- ...menu như các trang khác... -->
+        </div>
+    </nav>
+    <main class="max-w-6xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+        <!-- Cột nhỏ bên trái -->
+        <aside class="md:col-span-1">
+            <div class="bg-white rounded-xl shadow p-6 mb-8">
+                <h2 class="text-lg font-bold text-indigo-700 mb-4">Tỷ giá Yên Nhật</h2>
+                <form id="currency-form" class="flex flex-col gap-2 items-center mb-4">
+                    <div class="flex gap-2 items-center w-full">
+                        <input type="number" id="yen-input" class="border rounded px-2 py-1 w-32" placeholder="Yên" min="0">
+                        <span class="font-bold">Yên</span>
+                    </div>
+                    <div class="flex gap-2 items-center w-full">
+                        <input type="number" id="vnd-input" class="border rounded px-2 py-1 w-32" placeholder="VNĐ" min="0">
+                        <span class="font-bold">VNĐ</span>
+                    </div>
+                    <div id="result" class="mt-2 text-indigo-700 font-semibold"></div>
+                </form>
+                <div class="text-xs text-gray-500 text-center">Tỷ giá cập nhật 15:00 ngày 1/1/2025</div>
+                <p class="text-xs text-red-400">* Yên (JPY) là đơn vị tiền tệ của Nhật Bản </p>
+                <p class="text-xs text-red-400">* Đồng (VND) là đơn vị tiền tệ của Việt Nam </p>
+                <div class="text-xs text-gray-500 text-center">Tỷ giá có thể thay đổi theo thị trường.</div>
+            </div>
+        </aside>
+        <!-- Cột lớn bên phải -->
+        <section class="md:col-span-3">
+            <!-- <h1 class="text-2xl font-bold text-indigo-700 mb-6">Tin tức Du học Nhật Bản</h1> -->
+            <div class="flex flex-col gap-6">
+                <!-- Tin tức 1 -->
+                <article class="bg-white rounded-xl shadow p-6 flex gap-6">
+                    <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=300&q=80" alt="Tin tức 1" class="w-32 h-32 object-cover rounded-lg">
+                    <div>
+                        <h2 class="text-lg font-bold text-indigo-600 mb-2">Học bổng du học Nhật Bản 2025</h2>
+                        <p class="text-gray-700 mb-2">Nhiều chương trình học bổng hấp dẫn dành cho du học sinh Việt Nam năm 2025. Cơ hội nhận hỗ trợ tài chính lên đến 100% học phí.</p>
+                        <a href="#" class="text-indigo-700 hover:underline text-sm font-semibold">Xem chi tiết</a>
+                    </div>
+                </article>
+                <!-- Tin tức 2 -->
+                <article class="bg-white rounded-xl shadow p-6 flex gap-6">
+                    <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=300&q=80" alt="Tin tức 2" class="w-32 h-32 object-cover rounded-lg">
+                    <div>
+                        <h2 class="text-lg font-bold text-indigo-600 mb-2">Cập nhật quy định visa du học Nhật</h2>
+                        <p class="text-gray-700 mb-2">Chính phủ Nhật Bản vừa ban hành một số thay đổi về quy định visa cho du học sinh, giúp thủ tục đơn giản hơn và tăng cơ hội việc làm sau tốt nghiệp.</p>
+                        <a href="#" class="text-indigo-700 hover:underline text-sm font-semibold">Xem chi tiết</a>
+                    </div>
+                </article>
+                <!-- Tin tức 3 -->
+                <article class="bg-white rounded-xl shadow p-6 flex gap-6">
+                    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=300&q=80" alt="Tin tức 3" class="w-32 h-32 object-cover rounded-lg">
+                    <div>
+                        <h2 class="text-lg font-bold text-indigo-600 mb-2">Kinh nghiệm sống và học tập tại Nhật</h2>
+                        <p class="text-gray-700 mb-2">Chia sẻ thực tế từ các bạn du học sinh về cuộc sống, học tập, làm thêm và hội nhập văn hóa tại Nhật Bản.</p>
+                        <a href="#" class="text-indigo-700 hover:underline text-sm font-semibold">Xem chi tiết</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script>
+        var yenInput = document.getElementById('yen-input');
+        var vndInput = document.getElementById('vnd-input');
+        var resultDiv = document.getElementById('result');
+        var rate = 170;
+
+        yenInput.addEventListener('input', function() {
+            var yen = parseFloat(yenInput.value);
+            if (!isNaN(yen) && yen > 0) {
+                var vnd = yen * rate;
+                vndInput.value = vnd;
+                resultDiv.textContent = yen + ' Yên ≈ ' + vnd.toLocaleString() + ' VNĐ';
+            } else {
+                vndInput.value = '';
+                resultDiv.textContent = '';
+            }
+        });
+
+        vndInput.addEventListener('input', function() {
+            var vnd = parseFloat(vndInput.value);
+            if (!isNaN(vnd) && vnd > 0) {
+                var yen = vnd / rate;
+                yenInput.value = yen.toFixed(0);
+                resultDiv.textContent = yen.toFixed(0) + ' Yên ≈ ' + vnd.toLocaleString() + ' VNĐ';
+            } else {
+                yenInput.value = '';
+                resultDiv.textContent = '';
+            }
+        });
+    </script>
+</body>
+</html>

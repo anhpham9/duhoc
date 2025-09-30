@@ -1,0 +1,106 @@
+body,
+html {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+}
+
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif !important;
+}
+
+.hero-wrap {
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    background: #553be6;
+    background: -moz-linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #553be6), color-stop(100%, #a87ffa));
+    background: -webkit-linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
+    background: -o-linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
+    background: -ms-linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
+    background: linear-gradient(45deg, #553be6 0%, #a87ffa 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#553be6', endColorstr='#a87ffa', GradientType=1);
+}
+
+@media (max-width: 1199.98px) {
+    .hero-wrap {
+        height: 600px;
+    }
+}
+
+.hero-wrap .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    background: #000000;
+    z-index: -1;
+}
+
+.hero-wrap:after {
+    position: absolute;
+    top: -150px;
+    left: -200px;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    content: '';
+    background: #fff;
+    z-index: -1;
+    opacity: .05;
+}
+
+.hero-wrap:before {
+    position: absolute;
+    bottom: -90px;
+    left: 0;
+    width: 40%;
+    height: 180px;
+    content: '';
+    background: #000000;
+    z-index: -1;
+    opacity: .05;
+    border-radius: 0 50% 50% 0;
+}
+
+.hero-wrap .slider-text {
+    height: 800px;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 0;
+    position: relative;
+}
+
+@media (max-width: 1199.98px) {
+    .hero-wrap .slider-text {
+        height: 600px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-wrap .slider-text .svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        opacity: .4;
+    }
+}
+
+.hero-wrap .slider-text h1,
+.hero-wrap .slider-text .h1 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 60px;
+    line-height: 1.2;
+}
+
+@media (max-width: 767.98px) {
+
+    .hero-wrap .slider-text h1,
+    .hero-wrap .slider-text .h1 {
+        font-size: 40px;
+    }
+}
